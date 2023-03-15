@@ -27,7 +27,8 @@
       <li>
         <a class="nav-link" href="#Declaring_variables">Declaring variables</a>
       </li>
-      <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
+      <li><a class="nav-link" href="#Variable_scope">
+          Variable scope</a></li>
       <li>
         <a class="nav-link" href="#Global_variables">Global variables</a>
       </li>
@@ -47,7 +48,7 @@
     <section class="main-section" id="Introduction">
       <header>Introduction</header>
       <article>
-        <p>
+        <p class="Introduction">
           JavaScript is a cross-platform, object-oriented scripting language.
           It is a small and lightweight language. Inside a host environment
           (for example, a web browser), JavaScript can be connected to the
@@ -102,7 +103,7 @@
     <section class="main-section" id="JavaScript_and_Java">
       <header>JavaScript and Java</header>
       <article>
-        <p>
+        <p class="js-and-java">
           JavaScript and Java are similar in some ways but fundamentally
           different in some others. The JavaScript language resembles Java but
           does not have Java's static typing and strong type checking.
@@ -111,7 +112,7 @@
           renamed from LiveScript to JavaScript.
         </p>
 
-        <p>
+        <p class="js-and-java">
           In contrast to Java's compile-time system of classes built by
           declarations, JavaScript supports a runtime system based on a small
           number of data types representing numeric, Boolean, and string
@@ -146,11 +147,11 @@
     </section>
     <section class="main-section" id="Variables">
       <header>Variables</header>
-      <p>
+      <p class="variables">
         You use variables as symbolic names for values in your application.
         The names of variables, called identifiers, conform to certain rules.
       </p>
-      <p>
+      <p class="variables">
         A JavaScript identifier must start with a letter, underscore (_), or
         dollar sign ($); subsequent characters can also be digits (0-9).
         Because JavaScript is case sensitive, letters include the characters
@@ -167,19 +168,25 @@
     <section class="main-section" id="Declaring_variables">
       <header>Declaring variables</header>
       <article>
-        You can declare a variable in three ways:
+        <p class="declaring">You can declare a variable in three ways:</p>
         <p>
-          With the keyword var. For example, <code>var x = 42.</code> This
+          With the keyword var. For example,
+          <code>var x = 42.</code>
+        <p class="declaring">
+          This
           syntax can be used to declare both local and global variables.
+        </p>
         </p>
         <p>
           By simply assigning it a value. For example,
-          <code>x = 42.</code> This always declares a global variable. It
+          <code>x = 42.</code>
+        <p class="declaring">This always declares a global variable. It
           generates a strict JavaScript warning. You shouldn't use this
-          variant.
+          variant.</p>
         </p>
         <p>
-          With the keyword let. For example,<code> let y = 13.</code> This
+          With the keyword let. For example,
+          <code> let y = 13.</code> This
           syntax can be used to declare a block scope local variable. See
           Variable scope below.
         </p>
@@ -188,7 +195,7 @@
     <section class="main-section" id="Variable_scope">
       <header>Variable scope</header>
       <article>
-        <p>
+        <p class="scope">
           When you declare a variable outside of any function, it is called a
           global variable, because it is available to any other code in the
           current document. When you declare a variable within a function, it
@@ -217,7 +224,7 @@
     <section class="main-section" id="Global_variables">
       <header>Global variables</header>
       <article>
-        <p>
+        <p class="global-variables">
           Global variables are in fact properties of the global object. In web
           pages the global object is window, so you can set and access global
           variables using the window.variable syntax.
@@ -243,12 +250,12 @@
         </p>
 
         <code>const PI = 3.14;</code>
-        <p>
+        <p class="constants">
           A constant cannot change value through assignment or be re-declared
           while the script is running. It has to be initialized to a value.
         </p>
 
-        <p>
+        <p class="constants">
           The scope rules for constants are the same as those for let block
           scope variables. If the const keyword is omitted, the identifier is
           assumed to represent a variable.
@@ -313,11 +320,13 @@
         condition is false. An if statement looks as follows:
 
         <code>if (condition) { statement_1; } else { statement_2; }</code>
-        condition can be any expression that evaluates to true or false. See
-        Boolean for an explanation of what evaluates to true and false. If
-        condition evaluates to true, statement_1 is executed; otherwise,
-        statement_2 is executed. statement_1 and statement_2 can be any
-        statement, including further nested if statements.
+        <p class="if-else__statement">
+          condition can be any expression that evaluates to true or false. See
+          Boolean for an explanation of what evaluates to true and false. If
+          condition evaluates to true, statement_1 is executed; otherwise,
+          statement_2 is executed. statement_1 and statement_2 can be any
+          statement, including further nested if statements.
+        </p>
         <p>
           You may also compound the statements using else if to have multiple
           conditions tested in sequence, as follows:
@@ -352,23 +361,24 @@
         A while statement executes its statements as long as a specified
         condition evaluates to true. A while statement looks as follows:
 
-        <code>while (condition) statement</code> If the condition becomes
-        false, statement within the loop stops executing and control passes to
-        the statement following the loop.
+        <code>while (condition) statement</code>
+        <p class="while-statement">If the condition becomes
+          false, statement within the loop stops executing and control passes to
+          the statement following the loop.</p>
 
-        <p>
+        <p class="while-statement">
           The condition test occurs before statement in the loop is executed.
           If the condition returns true, statement is executed and the
           condition is tested again. If the condition returns false, execution
           stops and control is passed to the statement following while.
         </p>
 
-        <p>
+        <p class="while-statement">
           To execute multiple statements, use a block statement ({ ... }) to
           group those statements.
         </p>
 
-        Example:
+        <p class="while-statement">Example:</p>
 
         <p>
           The following while loop iterates as long as n is less than three:
@@ -385,7 +395,7 @@
           <li>After the second pass: n = 2 and x = 3</li>
           <li>After the third pass: n = 3 and x = 6</li>
         </ul>
-        <p>
+        <p class="while-statement-2">
           After completing the third pass, the condition n &lt; 3 is no longer
           true, so the loop terminates.
         </p>

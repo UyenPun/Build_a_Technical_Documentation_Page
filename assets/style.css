@@ -29,7 +29,7 @@ header {
   margin: 10px;
   text-align: center;
   font-size: 1.8em;
-  font-weight: thin;
+  font-weight: lighter;
 }
 
 #main-doc header {
@@ -40,8 +40,7 @@ header {
 #navbar ul {
   height: 88%;
   padding: 0;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: auto;
 }
 
 #navbar li {
@@ -54,8 +53,9 @@ header {
 
 #navbar a {
   display: block;
-  padding: 10px 30px;
+  padding: 20px 40px;
   color: #4d4e53;
+  font-size: 1.6rem;
   text-decoration: none;
   cursor: pointer;
 }
@@ -91,6 +91,21 @@ code {
   border-radius: 5px;
 }
 
+.Introduction,
+.js-and-java,
+.variables,
+.declaring,
+.scope,
+.global-variables,
+.constants,
+.if-else__statement,
+.while-statement {
+  margin-bottom: 2rem;
+}
+
+.while-statement-2 {
+  margin-top: 2rem;
+}
 /* reponsive: */
 @media only screen and (max-width: 815px) {
   /* For mobile phones: */
